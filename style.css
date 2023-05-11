@@ -1,3 +1,16 @@
+body {
+	background: linear-gradient(to bottom right, #87CEEB, #FFFFFF);
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
 header {
 	background: #fff;
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
@@ -7,20 +20,16 @@ header {
 	right: 0;
 	height: 70px;
 	z-index: 999;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 nav {
-	margin-right: 50px;
+	display: inline-block;
 }
 
 nav ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	align-items: center;
 }
 
 nav ul li {
@@ -38,4 +47,18 @@ nav ul li a {
 
 nav ul li a:hover {
 	color: #87CEEB;
+}
+
+main {
+	padding-top: 150px;
+}
+
+main h1 {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+main p {
+	font-size: 24px;
+	margin-bottom: 50px;
 }
