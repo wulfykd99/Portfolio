@@ -1,3 +1,7 @@
+nav {
+	float: left;
+}
+
 body {
 	background: linear-gradient(to bottom right, #87CEEB, #FFFFFF);
 	margin: 0;
