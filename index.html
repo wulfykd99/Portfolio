@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to My Portfolio</title>
+	<title>My Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-rhfXCsNtHDs1T2j3jKQzRgZYjdwlpGz9o9XtTq3fHYrdCrGgIVwBxksxvEiQTuWl" crossorigin="anonymous">
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Contact</a></li> 
-			</ul>
-		</nav>
-		<h1>Welcome to My Portfolio</h1>
-	</header>
-	<main>
-		<p>Hi, I'm Jane Doe, a web developer based in San Francisco.</p>
-		<p>On this site, you can find information about me and my projects.</p>
-	</main>
+	<nav>
+		<div class="logo">
+			<a href="index.html"><img src="logo.png" alt="Logo"></a>
+		</div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<div class="menu-icon">
+			<i class="fas fa-bars"></i>
+			<i class="fas fa-times"></i>
+		</div>
+	</nav>
+
+	<!-- Your content goes here -->
+
+	<script>
+		const menuIcon = document.querySelector('.menu-icon');
+		const menuItems = document.querySelector('nav ul');
+		
+		menuIcon.addEventListener('click', () => {
+			menuItems.classList.toggle('show');
+			menuIcon.querySelector('.fa-bars').classList.toggle('hide');
+			menuIcon.querySelector('.fa-times').classList.toggle('show');
+		});
+	</script>
 </body>
 </html>
-
